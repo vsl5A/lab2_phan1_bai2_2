@@ -1,0 +1,163 @@
+nav {
+	margin-bottom: 50px;
+}
+.card {
+	margin-bottom: 20px;
+	text-align: center;
+	border: none;
+	transition: all 0.5s;
+}
+.card:hover {
+	background-color: #ccc;
+}
+
+.cate_product {
+	font-size: 1em;
+	background-color: #fff;
+	text-align: center;
+	padding: 8px 15px;
+	
+	
+}
+.list_item {
+	list-style: none;
+	padding-left: 0;
+}
+.mau_den {
+	color: #000 !important;
+}
+.mau_den:hover {
+	text-decoration: none;
+	
+
+}
+.ani_hover:hover {
+	background-color: rgba(56, 56, 61,.7);
+
+}
+footer {
+	margin-top: 50px;
+	padding: 15px;
+	color: #fff;
+	text-align: center;
+}
+.box-bottom {
+	margin-top: 10px;
+	display: flex;
+	text-align: center;
+}
+.box-bottom img {
+	width: 90%;
+}
+.padding-7 {
+	padding: 7px;
+}
+.summary {
+	text-align: center;
+}
+.summary p {
+	text-align: left;
+}
+.summary h2 {
+	font-weight: normal;
+}
+.can_le_trai{
+	margin-left: 150px !important;
+}
+.can_phai {
+	margin-left: -5px;
+	margin-right: -5px;
+	color: blue !important;
+}
+.can_le_item {
+	margin-left: 5px;
+}
+.sub_cate:hover {
+	cursor: text;
+}
+.size_img {
+	background-size: 80px auto !important;
+	background-repeat: no-repeat !important;
+}
+.abc {
+	border: 1px solid #000;
+	padding: 0;
+	border-right: none;
+	border-top: none;
+	height:  800px;
+	border-bottom: none;
+}
+.back_gr {
+	background-color: #f8f9fa;
+	border-bottom: 1px solid #000;
+	margin : 0 15px 0 -15px;
+}
+.height_600{
+	height: 600px;
+	border: 1px solid #000;
+	
+	width: 160px !important;
+}
+.pad_0_1{
+	padding: 0;
+	
+
+}
+.pad_0 {
+	padding-right: 0;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+}
+.height_200{
+	height: 200px;
+	border-right: 1px solid #000;
+	width: 160px;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.boder_bot{
+	border-bottom: 1px solid #000;
+}
+.mau_trang {
+	color: #fff;
+}
+.abcd {
+	margin : 0 15px 0 -15px;
+
+}
+@media screen and (max-width: 740px) {
+	
+	.abc {border: none;}
+	.back_gr {border: none;} 
+	.height_600{border: none;
+	height: auto;} 
+	.pad_0 {border: none;}
+	.boder_bot{border: none;} 
+	.height_200{border: none;
+	height: 0;}
+	.abcd {
+		position:relative;
+		bottom: -700px;
+	}
+	.hien_menu:hover {
+		width: 200px;
+		height: 200px;
+		background-color: #000;
+		position: absolute;
+	}
+
+}
+@media screen and (max-width: 1024px) and (min-width: 740px){
+	.abc {border: none;}
+	.back_gr {border: none;} 
+	.height_600{border: none;
+	height: auto;} 
+	.pad_0 {border: none;}
+	.boder_bot{border: none;} 
+	.height_200{border: none;
+	height: 0;}
+}
+@media screen and (min-width :1024px){
+	
+}
+

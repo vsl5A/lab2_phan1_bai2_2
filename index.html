@@ -5,7 +5,14 @@
 <title>Lab</title>
 <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="css/style.css">
+<script src="js/bootstrap.min.js"></script>
+<script ></script>
 </head>
+<style>
+	table, td {
+	  border: 1px solid black;
+	}
+	</style>
 <body>
 <!-- <div class="container">
 	
@@ -109,7 +116,54 @@
 		<p><a href="#">Link 1</a> | <a href="#" class="mau_trang">Link 2</a> | <a href="#">Link 3</a></p>
 	</footer>
 </div> -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/fun.js"></script>
+<table id="myTable">
+	<tr id="myRow">
+	  <td>Row1 cell1</td>
+	  <td>Row1 cell2</td>
+	</tr>
+	<tr >
+	  <td>Row2 cell1</td>
+	  <td>Row2 cell2</td>
+	</tr>
+	<tr >
+		<td>Row3 cell1</td>
+		<td>Row3 cell2</td>
+	  </tr>
+  </table>
+  <br>
+  <button type="button" onclick="inc_hang()">h</button>
+  <button type="button" onclick="inc_c()">c</button>
+  <input type="text" placeholder="nhap chi so hàng cần xóa"></input>
+  <input type="text" placeholder="nhap chi so cột cần xóa"></input>
+  <button onclick="myFunction()">enter</button>
+  <script>
+	var count_h = 3;
+	var count_c = 2;
+  function inc_c() {
+	var table = document.getElementById("myTable");
+	for( var i =0 ;i<table.rows.length ;i++){
+		var cells=table.rows[i].insertCell(count_c);
+		cells.innerHTML = `new${count_c}`;
+	}
+	count_c +=1;
+	
+}
+function inc_hang() {
+	var table = document.getElementById("myTable");
+  var row = table.insertRow(0);
+  for ( var i =0 ; i< count_c;i++){var cell = row.insertCell(i);
+	cell.innerHTML = `hang_new${count_c-1}`;}
+ 
+  //document.getElementById("myTable").insertCell(2);
+}
+function myFunction() {
+  document.getElementById("myTable").deleteRow(0);
+  document.getElementById("myTable").rows[1].deleteCell(1);
+}
+
+
+
+  </script>
 </body>
 </html>
+<!--  -->
